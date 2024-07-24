@@ -26,7 +26,7 @@ public class Main {
             switch (choice) {
                 case 1: // if choice == 1
                     pokemonList = service.getAllPokemon();
-                    System.out.println("help");
+                    System.out.println(pokemonList);
                     break;
 
                 case 2: //else if choice == 2

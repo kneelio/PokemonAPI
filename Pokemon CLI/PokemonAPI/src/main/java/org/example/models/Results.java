@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Results {
 
-    @JsonProperty
+    @JsonProperty ("results")
     List<Pokemon> list;
 
     public List<Pokemon> getList() {return list;}

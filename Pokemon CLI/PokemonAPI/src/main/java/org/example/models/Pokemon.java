@@ -29,4 +29,9 @@ public class Pokemon {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    @Override
+    public String toString() {
+        return "id: " + id + " name: " + name + " url: " + url;
+    }
 }
