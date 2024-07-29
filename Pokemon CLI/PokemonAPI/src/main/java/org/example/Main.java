@@ -25,18 +25,26 @@ public class Main {
 
             switch (choice) {
                 case 1: // if choice == 1
-                    pokemonList = service.getAllPokemon();
-                    System.out.println(pokemonList);
+                    pokemonList = service.getAllPokemon(0);
+                    printPokemon(pokemonList);
                     break;
 
                 case 2: //else if choice == 2
-                    pokemonList = service.getAllPokemon();
+                    pokemonList = service.getAllPokemon(20);
+                    printPokemon(pokemonList);
                     break;
 
                 case 3: //
+                    pokemonList = service.getAllPokemon(40);
+                    printPokemon(pokemonList);
                     break;
             }
         } while (choice != 4);
     }
 
+    public static void printPokemon(List<Pokemon> pokemonList) {
+        for (Pokemon p : pokemonList) {
+            System.out.println(p.getId() + " - " + p.getName() + " - " +  p.getUrl());
+        }
+    }
 }
